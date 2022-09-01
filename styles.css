@@ -148,7 +148,7 @@ p span{
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 425px) {
     #tarjetas {
         display: flex;
         gap: 10px;
