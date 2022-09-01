@@ -53,8 +53,9 @@ h1{
 .tarjetaL:hover{
     background-color: #8e6995;
 }
-.tarjetaL:active{
+input:checked + label{
     background-color: #572364;
+    color: white;
 }
 .tarjetaL img{
     height: 100px;
