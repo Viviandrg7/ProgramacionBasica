@@ -37,6 +37,7 @@ h1{
 #tarjetas{
     display: flex;
     gap: 10px;
+    flex-direction: row;
 }
 .tarjetaL{
     height: 120px;
@@ -146,12 +147,16 @@ p span{
     
 }
 
+
 @media (max-width: 360px) {
-     #tarjetas{
+    #tarjetas {
+        display: flex;
+        gap: 10px;
         flex-direction: column;
     }
+
     #cabecera :nth-child(2){
-    margin: 5%;
-    text-align: center;
-}
+        margin:7%;
+        text-align: center;
+  }
 }
