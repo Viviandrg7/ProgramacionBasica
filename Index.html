@@ -1,62 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piedra, papel o tijera</title>
+    <meta charset="utf-8" />
+    <title>MOKEPON!</title>
+    <script src="./js/mokepon.js"></script>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <h2>Piedra, papel o tijera</h2>
-     <script>
-         //1 piedra, 2 papel y 3 tijera
-         let jugador = 0;
-         let min = 1;
-         let max = 3;
+
+    <section id="cabecera">
+        <h1>MOKEPON!</h1>
+
+        <h4>Agua mata fuego, fuego mata tierra y tierra mata agua</h4>
+        <p>💧🔥🌱</p>
+    </section>
+    <section id="seleccionar-mascota">
+
+        <h2>Elige tu mascota:</h2>
+
+        <div id="tarjetas">
+            <label class="tarjetaL" for="hipodoge">
+                <p>Hipodoge</p>
+                <img src="https://1.bp.blogspot.com/-jAsNep_W0us/YSaqqAO4u-I/AAAAAAAARWY/CJExPeZp_3IeVW8HB5lduk2BodNzaM6IQCLcBGAsYHQ/s600/Clipart%2Bclash%2Bof%2Bclans%2Broyale%2Bpng%2Bdescarga%2Bgratis%2B%252829%2529.png"
+                    alt="Hipodoge">
+            </label>
+            <input type="radio" name="mascota" id="hipodoge" />
+
+            <label class="tarjetaL" for="capipepo">
+                <p>Capipepo</p>
+                <img src="https://1.bp.blogspot.com/-ba8jwRREJZM/YSarYVtNVqI/AAAAAAAARX0/qLSeXQ6rndMm-wEvrNtTmj_BAUgx1HiiwCLcBGAsYHQ/s600/Clipart%2Bclash%2Bof%2Bclans%2Broyale%2Bpng%2Bdescarga%2Bgratis%2B%252841%2529.png"
+                    alt="Capipepo">
+            </label>
+            <input type="radio" name="mascota" id="capipepo" />
+
+            <label class="tarjetaL" for="ratigueya">
+                <p>Ratigueya</p>
+                <img src="https://1.bp.blogspot.com/-YAy_RGcgSv8/YSavGh2a69I/AAAAAAAARfo/FkAalK72y0MnsNYOvVi5pGkJwKfK_I0SACLcBGAsYHQ/s600/Clipart%2Bclash%2Bof%2Bclans%2Broyale%2Bpng%2Bdescarga%2Bgratis%2B%2528139%2529.png"
+                    alt="ratigueya">
+            </label>
+            <input type="radio" name="mascota" id="ratigueya" />
+        </div>
 
 
-         let pc = Math.floor(Math.random() * (max - min + 1 ) + min);
-         jugador = prompt("Elige: 1 para piedra, 2 para papel o 3 para tijeras")
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
 
-        if(jugador == 1){
-            alert("Elegiste piedra")
-        }
-        else if(jugador == 2){
-            alert("Elegiste papel")
-        }
-        else if(jugador == 3){
-            alert("Elegiste tijera")
-        }
-        else{
-            alert("Elegiste PERDER")
-        }
-
-        if(pc == 1){
-            alert("La Pc eligió piedra")
-        }
-        else if(pc == 2){
-            alert("La Pc eligió papel")
-        }
-        else if(pc == 3){
-            alert("La Pc eligió tijera")
-        }
+    <section id="seleccionar-ataque">
+        <h2>Elige tu ataque:</h2>
+        <div class="botones">
+            <button id="boton-agua">Agua 💧</button>
+            <button id="boton-fuego">Fuego 🔥</button>
+            <button id="boton-tierra">Tierra 🌱</button>
+        </div>
+        <div>
+            <div id="mensajes">
+                <p id="resultado">Suerte</p>
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Jugar de Nuevo</button>
+                </section>
+            </div>
 
 
-        if(pc == jugador){
-            alert("Empate");
-        }
-        else if(jugador == 1 && pc == 3){
-            alert("Ganaste");
-        }
-        else if(jugador == 2 && pc == 1){
-            alert("Ganaste");
-        }
-        else if(jugador == 3 && pc == 1){
-            alert("Ganaste");
-        }
-        else{
-            alert("Perdiste")
-        }
-     </script>
+        </div>
+        <div id="section">
+            <div>
+                <p>Tu: <span id="mascota-jugador">❌</span></p>
+                <p id="vidas-jugador">3</p>
+                <div id="ataqueJugador"></div>
+            </div>
+            <div>
+                
+                
+                <p>Enemigo: <span id="mascota-enemigo">❌</span></p>
+                <p id="vidas-enemigo">3</p>
+                <div id="ataqueEnemigo"></div>
+            </div>
+
+        </div>
+    </section>
+
 </body>
+
 </html>

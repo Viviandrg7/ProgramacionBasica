@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+
+body{
+    background:linear-gradient(90deg, #572364, #72467c, #8e6995,  #aa8caf, #c6b1c9);
+
+}
+
+#cabecera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#cabecera :nth-child(2),
+#cabecera :nth-child(3){
+    margin: 0%;
+}
+
+h1{
+    height: 50px;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 90px;
+    margin-bottom: 4%;
+    margin-top: 2%;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+#seleccionar-mascota :nth-child(1){
+    color: #572364;
+}
+#tarjetas{
+    display: flex;
+    gap: 10px;
+}
+.tarjetaL{
+    height: 120px;
+    width: 160px;
+    background-color: #c6b1c9;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+}
+.tarjetaL:hover{
+    background-color: #8e6995;
+}
+.tarjetaL:active{
+    background-color: #572364;
+}
+.tarjetaL img{
+    height: 100px;
+}
+
+
+input{
+    display: none;
+}
+
+#boton-mascota{
+    border: 1px  solid #572364;
+    background-color: transparent;
+    border-radius: 20%;
+    height:40px;
+    color: white;
+    margin: 3%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+} 
+#boton-mascota:hover{
+    background-color: #572364;
+}
+
+/*seleccionar ataque*/
+#seleccionar-ataque{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+.botones button{
+    border: 1px  solid #572364;
+    background-color: transparent;
+    border-radius:20px;
+    height:40px;
+    color: white;
+    width: 100px;
+}
+.botones button:hover{
+    background-color: #572364;
+}
+.tarjetaL:active{
+    background-color: #572364;
+}
+
+/*MENSAJE*/
+#mensajes{
+    background-color: #572364;
+    border-radius:20px;
+    color: white;
+    width: 250px;
+    height: 100px;
+    margin-top: 15%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#boton-reiniciar{
+    border: none;
+    background-color: transparent;
+    border-radius:20px;
+    height:40px;
+    color: white;
+    width: 150px;
+}
+#boton-reiniciar:hover{
+    background-color: #8e6995;
+}
+
+#section{
+    display: grid;
+    grid-template-columns: 160px 160px;
+    justify-content: center;
+    background-color: #572364;
+    border-radius:20px;
+    color: white;
+    margin: 10px;
+}
+
+p span{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 1.5rem;
+    color: #c6b1c9;
+
+    
+}
+
+@media (max-width: 360px) {
+     #tarjetas{
+        flex-direction: column;
+    }
+    #cabecera :nth-child(2){
+    margin: 5%;
+    text-align: center;
+}
+}
