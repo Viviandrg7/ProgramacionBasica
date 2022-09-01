@@ -66,15 +66,15 @@ function seleccionarMascotaEnemigo(){
 
 //ATAQUE DEL JUGADOR
 function ataqueFuego(){
-    ataqueJugador = "FUEGO"
+    ataqueJugador = "🔥"
     ataqueAleatorioEnemigo()
 }
 function ataqueTierra(){
-    ataqueJugador = "TIERRA"
+    ataqueJugador = "🌱"
     ataqueAleatorioEnemigo()
 }
 function ataqueAgua(){
-    ataqueJugador = "AGUA"
+    ataqueJugador = "💧"
     ataqueAleatorioEnemigo()
 }
 
@@ -83,13 +83,13 @@ function ataqueAleatorioEnemigo(){
     let ataqueAleatorio = aleatorio(1,3)
     
     if (ataqueAleatorio == 1){
-        ataqueEnemigo = "FUEGO"
+        ataqueEnemigo = "🔥"
     }
     else if(ataqueAleatorio == 2){
-        ataqueEnemigo = "AGUA"
+        ataqueEnemigo = "💧"
     }
     else{
-        ataqueEnemigo = "TIERRA"
+        ataqueEnemigo = "🌱"
     }
 
    combate()
@@ -101,17 +101,17 @@ function combate(){
         if (ataqueEnemigo == ataqueJugador) {
             mensajes = "Empate"
         }
-        else if (ataqueJugador == "FUEGO" && ataqueEnemigo == "TIERRA") {
+        else if (ataqueJugador == "🔥" && ataqueEnemigo == "🌱") {
             mensajes = "Ganaste"
             vidaEnemigo--
             spanvidasEnemigo.innerHTML = vidaEnemigo
         }
-        else if (ataqueJugador == "AGUA" && ataqueEnemigo == "FUEGO") {
+        else if (ataqueJugador == "💧" && ataqueEnemigo == "🔥") {
             mensajes = "Ganaste"
             vidaEnemigo--
             spanvidasEnemigo.innerHTML = vidaEnemigo
         }
-        else if (ataqueJugador == "TIERRA" && ataqueEnemigo == "AGUA") {
+        else if (ataqueJugador == "🌱" && ataqueEnemigo == "💧") {
             mensajes = "Ganaste"
             vidaEnemigo--
             spanvidasEnemigo.innerHTML = vidaEnemigo

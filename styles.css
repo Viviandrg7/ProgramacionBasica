@@ -129,10 +129,15 @@ input{
     background-color: #8e6995;
 }
 
-#section{
+#prueba{
     display: grid;
-    grid-template-columns: 160px 160px;
+    grid-template-columns: 170px 170px;
     justify-content: center;
+}
+.section{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
     background-color: #572364;
     border-radius:20px;
     color: white;
@@ -143,10 +148,19 @@ p span{
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-size: 1.5rem;
     color: #c6b1c9;
-
-    
 }
-
+#vidas-jugador,
+#vidas-enemigo{
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    background-color: #72467c;
+    width: 50px;
+    border-radius:50px;
+    font-size: 2rem;
+    color: #f6e2f9;
+    display: grid;
+    justify-content: center;
+    margin: 5px;
+} 
 
 @media (max-width: 640px) {
     #tarjetas {
