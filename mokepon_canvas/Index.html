@@ -10,7 +10,7 @@
 
 <body>
 
-   
+
     <section id="seleccionar-mascota">
         <section id="cabecera">
             <h1>MOKEPON!</h1>
@@ -24,16 +24,33 @@
         <button id="boton-mascota">Seleccionar</button>
     </section>
 
+
+    <section id="verMapa">
+        <section id="cabecera">
+            <h2>Recorre el mapa con tu mokepon</h2>
+        </section>
+        <canvas id="mapa"></canvas>
+        <button id="verMapaB1" onmouseup="detenerMovimiento()" onmousedown="moverY_U()">👆🏼</button>
+        <div id="verMapaB">
+            <button onmouseup="detenerMovimiento()" onmousedown="moverX_L()">👈🏼</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverY_D()">👇🏼</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverX_R()">👉🏼</button>
+        </div>
+       
+
+    </section>
+
+
     <section id="seleccionar-ataque">
         <section id="cabecera">
             <h1>MOKEPON!</h1>
-    
+
             <h4>Agua mata fuego, fuego mata tierra y tierra mata agua</h4>
             <p>💧🔥🌱</p>
         </section>
         <h2>Elige tu ataque:</h2>
         <div id="botones" class="botones">
-            
+
         </div>
         <div>
             <div id="mensajes">
@@ -59,7 +76,7 @@
 
         </div>
     </section>
-    <script src="./js/mokepon.js"></script>
+    <script src="mokepon.js"></script>
 </body>
 
 </html>

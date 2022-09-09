@@ -24,6 +24,34 @@ h1{
     margin-bottom: 12%;
     margin-top: 2%;
 }
+/*canvas */
+#cabecera h2{
+    height: 35px;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 30px;
+}
+#verMapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#verMapa button{
+    border: 1px  solid #572364;
+    background: transparent;
+    border-radius:20px;
+    height:40px;
+    color: white;
+    width: 60px;
+   
+}
+#verMapaB1{
+    margin-top: 3px;
+}
+#verMapaB{
+    flex-direction: row;
+    margin: 3px;
+}
+/*canvas */
 
 #seleccionar-mascota{
     display: flex;
