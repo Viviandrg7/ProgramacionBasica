@@ -17,6 +17,9 @@ const contenedorBotones = document.getElementById("botones");
 const contenerdorCanvas = document.getElementById("verMapa");
 const mapa = document.getElementById("mapa");
 
+const yU = document.getElementById("verMapaB1");
+yU.addEventListener("TouchEvent", moverY_U, detenerMovimiento);
+
 
 let mokepones = [];
 //let ataqueJugador;

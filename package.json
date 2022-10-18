@@ -1,0 +1,19 @@
+{
+  "name": "programacionbasica",
+  "version": "1.0.0",
+  "description": "Proyectos realizados en el curso de Programación Básica, en la escuela de Desarrollo Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viviandrg7/ProgramacionBasica.git"
+  },
+  "author": " (VIV)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Viviandrg7/ProgramacionBasica/issues"
+  },
+  "homepage": "https://github.com/Viviandrg7/ProgramacionBasica#readme"
+}
