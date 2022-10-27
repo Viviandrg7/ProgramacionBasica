@@ -197,7 +197,7 @@ function iniciarJuego() {
 
 function seleccionarMascotaJugador() {
   
-  sectionSeleccionarMascota.style.display = "none";
+
 
 
 
@@ -212,8 +212,9 @@ function seleccionarMascotaJugador() {
     mascotaJugardor = inputRatigueya.id
   } else {
     alert("No elegiste mascota");
+    return
   }
-
+  sectionSeleccionarMascota.style.display = "none";
     //canvas
     contenerdorCanvas.style.display = "flex";
     iniciarMapa()
@@ -341,7 +342,7 @@ function revisarVidas() {
   if (victoriasJugador == victoriasEnemigo) {
     crearMensajeFinal("Empate");
   } else if (victoriasJugador < victoriasEnemigo) {
-    crearMensajeFinal("No tienes más vidas, Perdiste");
+    crearMensajeFinal("Lo siento, Perdiste");
   } else {
     crearMensajeFinal("Felicidades, Ganaste");
   }

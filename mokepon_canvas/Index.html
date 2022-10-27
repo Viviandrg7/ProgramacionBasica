@@ -30,11 +30,13 @@
             <h2>Recorre el mapa con tu mokepon</h2>
         </section>
         <canvas id="mapa"></canvas>
-        <button id="verMapaB1" onmouseup="detenerMovimiento()" onmousedown="moverY_U()" addEventListener='click', moverX_L()>👆🏼</button>
+        <button id="verMapaB1" 
+        ontouchend="detenerMovimiento()" ontouchstart="moverY_U()"
+        onmouseup="detenerMovimiento()" onmousedown="moverY_U()" addEventListener='click', moverX_L()>👆🏼</button>
         <div id="verMapaB">
-            <button onmouseup="detenerMovimiento()" onmousedown="moverX_L()">👈🏼</button>
-            <button onmouseup="detenerMovimiento()" onmousedown="moverY_D()">👇🏼</button>
-            <button onmouseup="detenerMovimiento()" onmousedown="moverX_R()">👉🏼</button>
+            <button ontouchend="detenerMovimiento()" ontouchstart="moverX_L()" onmouseup="detenerMovimiento()" onmousedown="moverX_L()">👈🏼</button>
+            <button ontouchend="detenerMovimiento()" ontouchstart="moverY_D()" onmouseup="detenerMovimiento()" onmousedown="moverY_D()">👇🏼</button>
+            <button ontouchend="detenerMovimiento()" ontouchstart="moverX_R()" onmouseup="detenerMovimiento()" onmousedown="moverX_R()">👉🏼</button>
         </div>
        
 
@@ -59,7 +61,6 @@
                     <button id="boton-reiniciar">Jugar de Nuevo</button>
                 </section>
             </div>
-
 
         </div>
         <div id="prueba">

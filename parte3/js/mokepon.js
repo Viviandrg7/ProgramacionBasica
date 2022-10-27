@@ -144,14 +144,11 @@ function seleccionarMascotaJugador() {
   seleccionarMascotaEnemigo();
 }
 function seleccionarMokepon(mascotaJugardor){
-  fetch("http://localhost:8081/mokepon"+jugadorId + {method: "post",
-  headers:{
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    mokepon: mascotaJugardor
-  })
-})
+  fetch(`http://localhost:8081/mokepon/${jugadorId}`, {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ mokepon: mascotaJugardor }),
+  });
 }
 
 function extraerAtaque(mascotaJugardor){
